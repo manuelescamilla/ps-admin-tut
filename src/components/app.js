@@ -1,6 +1,6 @@
-// "use strict"; // Disabling check because we can't runt strict mode. Need global vars
+/*eslint-disable strict */ // Disabling check because we can't runt strict mode. Need global vars
 
-var React = require ('react');
+var React = require('react');
 var Header = require('./common/header');
 var RouteHandler = require('react-router').RouteHandler;
 $ = jQuery = require('jquery');
