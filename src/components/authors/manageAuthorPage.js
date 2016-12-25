@@ -26,7 +26,7 @@ var ManageAuthorPage = React.createClass({
     saveAuthor: function(event) {
         event.preventDefault();
         AuthorApi.saveAuthor(this.state.author);
-        this.transitionTo(authors);
+        this.transitionTo('authors');
     },
 
     render: function(){
