@@ -36,7 +36,7 @@ var ManageAuthorPage = React.createClass({
     },
 
     authorFormIsValid: function() {
-        var formIsValid;
+        var formIsValid = true;
         this.state.errors = {}; // to keep track of errors and clear any previous errors
 
         if (this.state.author.firstName.length < 3 ){

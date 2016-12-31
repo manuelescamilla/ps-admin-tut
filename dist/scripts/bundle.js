@@ -50431,10 +50431,10 @@ var AuthorForm = React.createClass({displayName: "AuthorForm",
     propTypes: {
         author: React.PropTypes.object.isRequired,
         onSave: React.PropTypes.func.isRequired,
-        Onchange: React.PropTypes.func.isRequired,
+        onChange: React.PropTypes.func.isRequired,
         errors: React.PropTypes.object
     },
-    
+
     render: function() {
         return (
             React.createElement("form", null, 
@@ -50575,7 +50575,7 @@ var ManageAuthorPage = React.createClass({displayName: "ManageAuthorPage",
     },
 
     authorFormIsValid: function() {
-        var formIsValid;
+        var formIsValid = true;
         this.state.errors = {}; // to keep track of errors and clear any previous errors
 
         if (this.state.author.firstName.length < 3 ){
